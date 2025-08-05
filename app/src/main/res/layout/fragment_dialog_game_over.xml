@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tool:context=".ui.game.GameOverFragmentDialog">
+
+    <ImageView
+        android:id="@+id/iv_cup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/text_cup_image"
+        android:src="@drawable/win" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_congrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_cup"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/text_congratulation"
+        android:textSize="26sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_congrats"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_score_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_category"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/text_score_info"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_score_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_correct_icon"
+            android:src="@drawable/ic_check"
+            app:tint="?colorSecondary" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_correct_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            tool:text="@string/text_correct" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/description_incorrect_icon"
+            android:src="@drawable/ic_clear"
+            app:tint="?colorError" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_incorrect_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            tool:text="@string/text_incorrect" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_alignStart="@id/linear"
+        android:layout_alignEnd="@id/linear"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_home"
+        android:drawableTint="?android:colorBackground"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="10dp"
+        android:text="@string/text_back_to_home"
+        android:textSize="15sp"
+        app:cornerRadius="10dp"
+        tool:ignore="RtlHardcoded,UnusedAttribute" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_back_home"
+        android:layout_alignStart="@id/btn_back_home"
+        android:layout_alignEnd="@id/btn_back_home"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_replay"
+        android:drawableTint="?colorOnBackground"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="10dp"
+        android:text="@string/text_replay_quiz"
+        android:textColor="?colorOnBackground"
+        app:cornerRadius="10dp"
+        app:strokeColor="?colorOnBackground"
+        app:strokeWidth="1dp"
+        tool:ignore="RtlHardcoded"
+        tool:targetApi="m" />
+
+</RelativeLayout>
