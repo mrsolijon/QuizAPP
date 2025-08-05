@@ -3,11 +3,6 @@ package uz.mrsolijon.quizapp.ui.profile.create
 import android.Manifest
 import android.app.Activity
 import android.app.DatePickerDialog
-import uz.mrsolijon.quizapp.data.local.entity.UserEntity
-import uz.mrsolijon.quizapp.viewmodels.ProfileViewModel
-import uz.mrsolijon.quizapp.utils.Constants
-import uz.mrsolijon.quizapp.utils.Constants.PREFS_IS_HAVE
-import uz.mrsolijon.quizapp.utils.Constants.makeDateToString
 import android.content.Intent
 import android.content.SharedPreferences
 import android.content.pm.PackageManager
@@ -30,7 +25,12 @@ import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import uz.mrsolijon.quizapp.BuildConfig
 import uz.mrsolijon.quizapp.R
+import uz.mrsolijon.quizapp.data.local.entity.UserEntity
 import uz.mrsolijon.quizapp.databinding.FragmentCreateProfileBinding
+import uz.mrsolijon.quizapp.utils.Constants
+import uz.mrsolijon.quizapp.utils.Constants.PREFS_IS_HAVE
+import uz.mrsolijon.quizapp.utils.Constants.makeDateToString
+import uz.mrsolijon.quizapp.viewmodels.ProfileViewModel
 import java.util.Calendar
 import javax.inject.Inject
 

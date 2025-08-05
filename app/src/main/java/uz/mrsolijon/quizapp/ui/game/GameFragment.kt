@@ -1,16 +1,6 @@
 package uz.mrsolijon.quizapp.ui.game
 
 import android.annotation.SuppressLint
-import uz.mrsolijon.quizapp.R
-import uz.mrsolijon.quizapp.data.local.entity.ScoreEntity
-import uz.mrsolijon.quizapp.data.remote.response.DetailedAnswerResult
-import uz.mrsolijon.quizapp.databinding.FragmentGameBinding
-import uz.mrsolijon.quizapp.data.model.GameScoreData
-import uz.mrsolijon.quizapp.utils.Constants
-import uz.mrsolijon.quizapp.utils.UIExtensions.inVisible
-import uz.mrsolijon.quizapp.utils.UIExtensions.visible
-import uz.mrsolijon.quizapp.viewmodels.GameState
-import uz.mrsolijon.quizapp.viewmodels.GameViewModel
 import android.content.SharedPreferences
 import android.os.Build
 import android.os.Bundle
@@ -28,8 +18,17 @@ import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
+import uz.mrsolijon.quizapp.R
+import uz.mrsolijon.quizapp.data.local.entity.ScoreEntity
+import uz.mrsolijon.quizapp.data.model.GameScoreData
+import uz.mrsolijon.quizapp.data.remote.response.DetailedAnswerResult
+import uz.mrsolijon.quizapp.databinding.FragmentGameBinding
+import uz.mrsolijon.quizapp.utils.Constants
+import uz.mrsolijon.quizapp.utils.UIExtensions.inVisible
+import uz.mrsolijon.quizapp.utils.UIExtensions.visible
+import uz.mrsolijon.quizapp.viewmodels.GameState
+import uz.mrsolijon.quizapp.viewmodels.GameViewModel
 import javax.inject.Inject
-import kotlin.getValue
 
 
 @AndroidEntryPoint

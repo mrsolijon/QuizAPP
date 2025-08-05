@@ -1,15 +1,14 @@
 package uz.mrsolijon.quizapp.di
 
-import uz.mrsolijon.quizapp.data.remote.api.QuizApi
-import uz.mrsolijon.quizapp.utils.Constants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import uz.mrsolijon.quizapp.data.remote.api.QuizApi
+import uz.mrsolijon.quizapp.utils.Constants
 import javax.inject.Singleton
-
 
 
 @Module

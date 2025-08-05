@@ -1,10 +1,9 @@
 package uz.mrsolijon.quizapp.viewmodels
 
-import uz.mrsolijon.quizapp.repository.QuizRepository
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
+import uz.mrsolijon.quizapp.repository.QuizRepository
 import javax.inject.Inject
-
 
 
 @HiltViewModel

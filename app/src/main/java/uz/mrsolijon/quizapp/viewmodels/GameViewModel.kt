@@ -1,12 +1,5 @@
 package uz.mrsolijon.quizapp.viewmodels
 
-import uz.mrsolijon.quizapp.data.local.entity.ScoreEntity
-import uz.mrsolijon.quizapp.data.remote.response.DetailedAnswerResult
-import uz.mrsolijon.quizapp.repository.QuizRepository
-import uz.mrsolijon.quizapp.utils.Categories
-import uz.mrsolijon.quizapp.utils.Constants
-import uz.mrsolijon.quizapp.utils.Constants.QUESTIONS_AMOUNT
-import uz.mrsolijon.quizapp.utils.Constants.TOTAL_SECONDS
 import android.util.Log
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
@@ -28,8 +21,14 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import uz.mrsolijon.quizapp.data.local.entity.ScoreEntity
+import uz.mrsolijon.quizapp.data.remote.response.DetailedAnswerResult
+import uz.mrsolijon.quizapp.repository.QuizRepository
+import uz.mrsolijon.quizapp.utils.Categories
+import uz.mrsolijon.quizapp.utils.Constants
+import uz.mrsolijon.quizapp.utils.Constants.QUESTIONS_AMOUNT
+import uz.mrsolijon.quizapp.utils.Constants.TOTAL_SECONDS
 import javax.inject.Inject
-
 
 
 @HiltViewModel

@@ -1,11 +1,11 @@
 package uz.mrsolijon.quizapp.data.local.dao
 
-import uz.mrsolijon.quizapp.data.local.entity.UserEntity
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
+import uz.mrsolijon.quizapp.data.local.entity.UserEntity
 
 
 @Dao

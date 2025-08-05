@@ -1,10 +1,5 @@
 package uz.mrsolijon.quizapp.ui.home
 
-import uz.mrsolijon.quizapp.data.local.entity.ScoreEntity
-import uz.mrsolijon.quizapp.viewmodels.HomeViewModel
-import uz.mrsolijon.quizapp.utils.Categories
-import uz.mrsolijon.quizapp.utils.Constants
-import uz.mrsolijon.quizapp.utils.isNetworkAvailable
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
@@ -21,9 +16,13 @@ import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import uz.mrsolijon.quizapp.R
+import uz.mrsolijon.quizapp.data.local.entity.ScoreEntity
 import uz.mrsolijon.quizapp.databinding.FragmentHomeBinding
+import uz.mrsolijon.quizapp.utils.Categories
+import uz.mrsolijon.quizapp.utils.Constants
+import uz.mrsolijon.quizapp.utils.isNetworkAvailable
+import uz.mrsolijon.quizapp.viewmodels.HomeViewModel
 import javax.inject.Inject
-
 
 
 @AndroidEntryPoint

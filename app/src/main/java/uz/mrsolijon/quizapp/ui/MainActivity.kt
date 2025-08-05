@@ -1,9 +1,5 @@
 package uz.mrsolijon.quizapp.ui
 
-import uz.mrsolijon.quizapp.R
-import uz.mrsolijon.quizapp.databinding.ActivityMainBinding
-import uz.mrsolijon.quizapp.utils.UIExtensions.inVisible
-import uz.mrsolijon.quizapp.utils.UIExtensions.visible
 import android.os.Bundle
 import android.widget.PopupMenu
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +7,10 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import dagger.hilt.android.AndroidEntryPoint
+import uz.mrsolijon.quizapp.R
+import uz.mrsolijon.quizapp.databinding.ActivityMainBinding
+import uz.mrsolijon.quizapp.utils.UIExtensions.inVisible
+import uz.mrsolijon.quizapp.utils.UIExtensions.visible
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

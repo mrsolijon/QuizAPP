@@ -1,18 +1,17 @@
 package uz.mrsolijon.quizapp.data.local
 
+import android.content.SharedPreferences
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.withContext
 import uz.mrsolijon.quizapp.data.local.dao.ScoreDao
 import uz.mrsolijon.quizapp.data.local.dao.UserDao
 import uz.mrsolijon.quizapp.data.local.entity.ScoreEntity
 import uz.mrsolijon.quizapp.data.local.entity.UserEntity
 import uz.mrsolijon.quizapp.utils.Constants.PREFS_SCORE_ID
 import uz.mrsolijon.quizapp.utils.Constants.PREFS_USER_ID
-import android.content.SharedPreferences
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.withContext
 import javax.inject.Inject
 import javax.inject.Singleton
-
 
 
 @Singleton

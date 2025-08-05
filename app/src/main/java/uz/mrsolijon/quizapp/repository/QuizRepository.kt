@@ -1,10 +1,9 @@
 package uz.mrsolijon.quizapp.repository
 
+import kotlinx.coroutines.flow.Flow
 import uz.mrsolijon.quizapp.data.local.entity.ScoreEntity
 import uz.mrsolijon.quizapp.data.local.entity.UserEntity
 import uz.mrsolijon.quizapp.data.remote.response.DetailedAnswerResult
-import kotlinx.coroutines.flow.Flow
-
 
 
 interface QuizRepository {

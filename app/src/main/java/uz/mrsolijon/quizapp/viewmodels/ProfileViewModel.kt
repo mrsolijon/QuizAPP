@@ -1,13 +1,12 @@
 package uz.mrsolijon.quizapp.viewmodels
 
-import uz.mrsolijon.quizapp.data.local.entity.UserEntity
-import uz.mrsolijon.quizapp.repository.QuizRepository
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import uz.mrsolijon.quizapp.data.local.entity.UserEntity
+import uz.mrsolijon.quizapp.repository.QuizRepository
 import javax.inject.Inject
-
 
 
 @HiltViewModel

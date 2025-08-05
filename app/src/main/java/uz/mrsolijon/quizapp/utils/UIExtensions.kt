@@ -3,7 +3,6 @@ package uz.mrsolijon.quizapp.utils
 import android.view.View
 
 
-
 object UIExtensions {
 
     fun View.visible() {

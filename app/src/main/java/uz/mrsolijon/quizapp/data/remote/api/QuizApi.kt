@@ -1,10 +1,9 @@
 package uz.mrsolijon.quizapp.data.remote.api
 
-import uz.mrsolijon.quizapp.data.remote.response.QuizResponse
-import uz.mrsolijon.quizapp.utils.Constants
 import retrofit2.http.GET
 import retrofit2.http.Query
-
+import uz.mrsolijon.quizapp.data.remote.response.QuizResponse
+import uz.mrsolijon.quizapp.utils.Constants
 
 
 interface QuizApi {
